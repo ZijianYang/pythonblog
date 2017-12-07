@@ -17,7 +17,7 @@ class User(db.Model):
         json_user = {
             'id': self.id,
             'delflag': self.delflag,
-            'addtime': self.username,
+            'addtime': self.addtime,
             'name': self.name,
             'password': self.password,
         }

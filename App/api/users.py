@@ -6,5 +6,5 @@ from DataAccess.Entity import User
 @api.route('/users/<int:userid>')
 def get_user(userid):
     """根据id获取用户信息"""
-    user = User.query.get_or_404(id)
+    user = User.query.filter(User.id == 1).first() 
     return jsonify(user.to_json())
