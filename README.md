@@ -8,6 +8,8 @@ virtualenv --version #验证是否安装
 pip install virtualenv #安装
 virtualenv venv #创建虚拟环境
 venv\Scripts\activate #激活虚拟环境
+orther： 1. Get-ExecutionPolicy 查看脚本运行策略 
+         2.et-ExecutionPolicy -ExecutionPolicy REMOTESIGNED 设置脚本运行策略
 deactivate #退出虚拟环境
 #安装依赖包
 pip install -r requirements/common.txt
