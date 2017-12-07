@@ -11,3 +11,7 @@ venv\Scripts\activate #激活虚拟环境
 deactivate #退出虚拟环境
 #安装依赖包
 pip install -r requirements/common.txt
+#创建数据库
+python manage.py db init #创建迁移仓库
+python manage.py db migrate  -m "initial migration" #创建迁移版本
+python manage.py db upgrade #更新
