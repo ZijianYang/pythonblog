@@ -16,3 +16,10 @@ python manage.py db init #创建迁移仓库
 如果是mysql则可能需要手动创建库
 python manage.py db migrate  -m "initial migration" #创建迁移版本
 python manage.py db upgrade #更新
+
+#初始化数据
+python manage.py shell #进入命令行
+Ctrl+z  enter #推出命令行
+
+#启动服务器
+python manage.py runserver --host 127.0.0.1
