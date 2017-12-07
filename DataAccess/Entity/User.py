@@ -6,7 +6,7 @@ class User(db.Model):
     __tablename__ = 'user'
     id = db.Column(db.Integer, primary_key=True)
     delflag = db.Column(db.Boolean, default=False)
-    addtime = db.Column(db.datetime, default=datetime.utcnow)
+    addtime = db.Column(db.DateTime(), default=datetime.utcnow)
     name = db.Column(db.String(64), unique=True)
     password = db.Column(db.String(64))
 
